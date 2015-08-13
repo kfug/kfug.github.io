@@ -1,0 +1,20 @@
+/******スポンサーロゴ画像間のmargin******/
+.sponsorLogo {
+    margin: 20px 20px;
+    width: 40%;
+}
+
+/*******iPhone4用スポンサーlogoリサイズ*******/
+@media (max-width: 320px) {
+    .sponsorLogo {
+        width: 250px;
+    }
+}
+/*******画像リンク********/
+#sponsor .sponsorLink {
+    text-decoration: none;
+}
+/********フッターのLink*******/
+.footer-text>a {
+    text-decoration: none;
+}
