@@ -21,6 +21,22 @@
     });
   </script>
   <script type="text/javascript" src="js/modernizr.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript">
+      $(window).load(function() {
+          function changeWidget() {
+              var twFrame = $('iframe#twitter-widget-0');
+              if (twFrame.length > 0) {
+                  twFrame.contents()
+                  .find('head').append('<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />');
+              } else {
+                  setTimeout(changeWidget, 1500);
+              }
+          }
+            changeWidget();
+        });
+    </script>
+
 </head>
 <body>
   <div class="w-nav left-navigation" data-collapse="small" data-animation="default" data-duration="400" data-no-scroll="1">
@@ -46,10 +62,10 @@
       <div class="w-container">
         <h2 class="section-heading centered">About</h2>
         <p class="section-subheading">年々激しく変化するフロントエンドの世界の中で、 今まさにHotな情報をお伝えする、フロントエンドエンジニアのための勉強会です。デザイン/設計/エンジニアリングと範囲の広がるフロントエンドの世界の中で、 最新のワークフローのエッセンスを体験してみてください。</p>
-      </div>
-      <a class="twitter-timeline" href="https://twitter.com/hashtag/frontkansai" data-widget-id="631733277288624128">#frontkansai のツイート</a>
+        <a class="twitter-timeline" href="https://twitter.com/hashtag/frontkansai" data-widget-id="631733277288624128">#frontkansai のツイート</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
       </script>
+      </div>
     </section>
     <section class="w-section section" id="timetable">
       <div class="w-container">
