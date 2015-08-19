@@ -1,7 +1,6 @@
 /******スポンサーロゴ画像間のmargin******/
 .sponsorLogo {
-    margin: 20px 20px;
-    width: 40%;
+    width: 100%;
 }
 
 /*******iPhone4用スポンサーlogoリサイズ*******/
@@ -13,11 +12,21 @@
 /*******画像リンク********/
 #sponsor .sponsorLink {
     text-decoration: none;
+    display: inline-block;
+    width: 45%;
+    padding: 15px 0px;
+    border-left: 1.7px #F6F6F6 ridge;
 }
 /********フッターのLink*******/
 .footer-text>a {
     text-decoration: none;
 }
+
+/********** hashtag link *********/
+a.hashtag {
+    text-decoration: none;
+}
+
 /******** twitter-widgetを横幅100%に *********/
 .twitter-timeline{
     max-width: 100% !important;
@@ -27,3 +36,6 @@
     box-sizing: border-box;
 }
 
+.twitter-account {
+    text-decoration: none;
+}
