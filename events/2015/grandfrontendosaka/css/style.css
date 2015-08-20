@@ -18,7 +18,7 @@
         letter-spacing: -.40em; /* 文字間を詰めて隙間を削除する */
         width: 45%;
         padding: 15px 0px;
-        border-left: 1.7px #F6F6F6 ridge;
+        border: 1.7px #F6F6F6 ridge;
     }
 }
 /***** iPhone6 plus より小さい場合 ******/
