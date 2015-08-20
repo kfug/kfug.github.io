@@ -1,4 +1,4 @@
-/******スポンサーロゴ画像間のmargin******/
+/******* スポンサーロゴ画像 *********/
 .sponsorLogo {
     width: 100%;
 }
@@ -10,12 +10,27 @@
     }
 }
 /*******画像リンク********/
-#sponsor .sponsorLink {
-    text-decoration: none;
-    display: inline-block;
-    width: 45%;
-    padding: 15px 0px;
-    border-left: 1.7px #F6F6F6 ridge;
+/***** iPhone6 plus より大きい場合 ******/
+@media (min-width: 415px) {
+    #sponsor .sponsorLink {
+        text-decoration: none;
+        display: inline-block;
+        letter-spacing: -.40em; /* 文字間を詰めて隙間を削除する */
+        width: 45%;
+        padding: 15px 0px;
+        border-left: 1.7px #F6F6F6 ridge;
+    }
+}
+/***** iPhone6 plus より小さい場合 ******/
+@media (max-width: 414px) {
+    #sponsor .sponsorLink {
+        text-decoration: none;
+        display: inline-block;
+        letter-spacing: -.40em; /* 文字間を詰めて隙間を削除する */
+        width: 80%;
+        padding: 15px 0px;
+        /*border-left: 1.7px #F6F6F6 ridge;*/
+    }
 }
 /********フッターのLink*******/
 .footer-text>a {
