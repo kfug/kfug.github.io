@@ -2,13 +2,6 @@
 .sponsorLogo {
     width: 100%;
 }
-
-/*******iPhone4用スポンサーlogoリサイズ*******/
-@media (max-width: 320px) {
-    .sponsorLogo {
-        width: 250px;
-    }
-}
 /*******画像リンク********/
 /***** iPhone6 plus より大きい場合 ******/
 @media (min-width: 415px) {
@@ -27,9 +20,8 @@
         text-decoration: none;
         display: inline-block;
         letter-spacing: -.40em; /* 文字間を詰めて隙間を削除する */
-        width: 80%;
+        width: 100%;
         padding: 15px 0px;
-        /*border-left: 1.7px #F6F6F6 ridge;*/
     }
 }
 /********フッターのLink*******/
