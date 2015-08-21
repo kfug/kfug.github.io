@@ -54,3 +54,12 @@ a.hashtag {
 .twitter-account {
     text-decoration: none;
 }
+
+a {
+    color: #0084b4;
+}
+
+.footer-impath{
+    width: 140px;
+    margin-bottom: 8px;
+}
