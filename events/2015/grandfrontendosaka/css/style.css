@@ -2,13 +2,6 @@
 .sponsorLogo {
     width: 100%;
 }
-
-/*/*******iPhone4用スポンサーlogoリサイズ******
-@media (max-width: 320px) {
-    .sponsorLogo {
-        width: 250px;
-    }
-}*/
 /*******画像リンク********/
 /***** iPhone6 plus より大きい場合 ******/
 @media (min-width: 415px) {
