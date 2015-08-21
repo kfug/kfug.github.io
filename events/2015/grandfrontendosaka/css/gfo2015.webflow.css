@@ -83,7 +83,7 @@ p {
   background-image: -webkit-radial-gradient(0% 0%, circle, white, rgba(0, 0, 0, 0) 52%), url('../images/gfo_bg.jpg');
   background-image: radial-gradient(circle at 0% 0%, white, rgba(0, 0, 0, 0) 52%), url('../images/gfo_bg.jpg');
   background-position: 0% 0%, 50% 50%;
-  background-size: auto, auto;
+  background-size: cover;
   box-shadow: #737373 0px 10px 10px -12px inset;
   color: white;
   text-align: center;
