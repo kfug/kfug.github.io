@@ -13,6 +13,9 @@
         padding: 15px 0px;
         border: 1.7px #F6F6F6 ridge;
     }
+    #pagetopbtn {
+        display: none;
+    }
 }
 /***** iPhone6 plus より小さい場合 ******/
 @media (max-width: 414px) {
@@ -22,6 +25,9 @@
         letter-spacing: -.40em; /* 文字間を詰めて隙間を削除する */
         width: 100%;
         padding: 15px 0px;
+    }
+    #pagetopbtn {
+
     }
 }
 /********フッターのLink*******/
@@ -45,4 +51,8 @@ a.hashtag {
 
 .twitter-account {
     text-decoration: none;
+}
+
+#pagetopbtn {
+    text-align: center;
 }
