@@ -1,51 +1,56 @@
-/******* スポンサーロゴ画像 *********/
-.sponsorLogo {
+.sponsor-logo {
     width: 100%;
 }
 
-/*******iPhone4用スポンサーlogoリサイズ*******/
+/*
+ iPhone4
+*/
 @media (max-width: 320px) {
-    .sponsorLogo {
+    .sponsor-logo {
         width: 250px;
     }
 }
-/*******画像リンク********/
-/***** iPhone6 plus より大きい場合 ******/
+
+/*
+ screen size > iPhone6 plus size
+*/
 @media (min-width: 415px) {
-    #sponsor .sponsorLink {
+    #sponsor .sponsor-link {
         text-decoration: none;
         display: inline-block;
-        letter-spacing: -.40em; /* 文字間を詰めて隙間を削除する */
+        letter-spacing: -.40em;
+        margin-top: 0.4em;
         width: 45%;
         padding: 15px 0px;
         border: 1.7px #F6F6F6 ridge;
     }
 }
-/***** iPhone6 plus より小さい場合 ******/
+
+/*
+ screen size < iPhone6 plus size
+*/
 @media (max-width: 414px) {
-    #sponsor .sponsorLink {
+    #sponsor .sponsor-link {
         text-decoration: none;
         display: inline-block;
-        letter-spacing: -.40em; /* 文字間を詰めて隙間を削除する */
+        letter-spacing: -.40em;
+        margin-top: 0.4em;
         width: 80%;
         padding: 15px 0px;
-        /*border-left: 1.7px #F6F6F6 ridge;*/
     }
 }
-/********フッターのLink*******/
-.footer-text>a {
+
+.footer-text > a {
     text-decoration: none;
 }
 
-/********** hashtag link *********/
 a.hashtag {
     text-decoration: none;
 }
 
-/******** twitter-widgetを横幅100%に *********/
-.twitter-timeline{
+.twitter-timeline {
     max-width: 100% !important;
-    width:100% !important;
+    width: 100% !important;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -59,7 +64,7 @@ a {
     color: #0084b4;
 }
 
-.footer-impath{
+.footer-impath {
     width: 140px;
     margin-bottom: 8px;
 }
