@@ -1,16 +1,6 @@
 .sponsor-logo {
     width: 100%;
 }
-
-/*
- iPhone4
-*/
-@media (max-width: 320px) {
-    .sponsor-logo {
-        width: 250px;
-    }
-}
-
 /*
  screen size > iPhone6 plus size
 */
@@ -24,8 +14,10 @@
         padding: 15px 0px;
         border: 1.7px #F6F6F6 ridge;
     }
+    #pagetopbtn {
+        display: none;
+    }
 }
-
 /*
  screen size < iPhone6 plus size
 */
@@ -34,8 +26,8 @@
         text-decoration: none;
         display: inline-block;
         letter-spacing: -.40em;
+        width: 100%;
         margin-top: 0.4em;
-        width: 80%;
         padding: 15px 0px;
     }
 }
@@ -58,6 +50,10 @@ a.hashtag {
 
 .twitter-account {
     text-decoration: none;
+}
+
+#pagetopbtn {
+    text-align: center;
 }
 
 a {
