@@ -1,16 +1,6 @@
 .sponsor-logo {
     width: 100%;
 }
-
-/*
- iPhone4
-*/
-@media (max-width: 320px) {
-    .sponsor-logo {
-        width: 250px;
-    }
-}
-
 /*
  screen size > iPhone6 plus size
 */
@@ -35,7 +25,7 @@
         display: inline-block;
         letter-spacing: -.40em;
         margin-top: 0.4em;
-        width: 80%;
+        width: 100%;
         padding: 15px 0px;
     }
 }
@@ -67,4 +57,8 @@ a {
 .footer-impath {
     width: 140px;
     margin-bottom: 8px;
+}
+
+.finished-discription {
+    font-size: 1em !important;
 }
