@@ -13,15 +13,90 @@
             width:100%;max-width: 250px;
             display: block;margin: auto;
             position: relative;
-            margin-top: 200px;
+            margin-top: 50px;
         }
         .link{
             font-size: 1.5em;;
             color: #30ADE3;
         }
+        #conf2016 {
+            background: url("https://raw.githubusercontent.com/kfug/frontconf2016/master/src/img/bg_pattern.jpg");
+            height: 450px;
+            width: 100%;
+            display: block;
+            position: relative;
+            border: 0;
+        }
+        #conf2016:before {
+            content: "";
+            background-image: url("https://raw.githubusercontent.com/kfug/frontconf2016/master/src/img/bg_shape_l.png");
+            width: 215px;
+            height: 221px;
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+        }
+        #conf2016:after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 40px;
+            top: 40px;
+            background-image: url("https://raw.githubusercontent.com/kfug/frontconf2016/master/src/img/bg_shape_r.png");
+            width: 228px;
+            height: 243px;
+        }
+        #conf2016 img {
+            border: 0;
+            position: relative;
+            margin-left: -269px;
+            margin-top: -122px;
+            top: 50%;
+            left: 50%;
+        }
+        .counter {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            color: #fff;
+            background-color: #000;
+            text-align: center;
+            padding: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
+    <a href="http://kfug.github.io/frontconf2016" id="conf2016">
+        <img src="https://raw.githubusercontent.com/kfug/frontconf2016/master/src/img/mainttl.png" title="Frontend Conference 2016, Osaka (Kansai, Japan)">
+    </a>
+    <script type="text/javascript">
+        (function () {
+            var secondsLeft = 10
+            var btn = document.createElement('span')
+            btn.className = "counter"
+            btn.addEventListener("click", function () {
+                clearInterval(interval)
+                document.body.removeChild(btn)
+            })
+            document.body.appendChild(btn)
+            function redrawCounter() {
+                btn.innerHTML = "後" + secondsLeft + "秒にイベントページにリダイレクトをします。キャンセルのためここにクリックしてください！"
+            }
+            redrawCounter();
+
+            var interval = setInterval(function () {
+                secondsLeft--
+                redrawCounter()
+                if (secondsLeft == 0) {
+                    document.location.href = document.getElementById("conf2016").attributes.href.value; 
+                    clearInterval(interval)
+                }
+            }, 1000);   
+        })()
+    </script>
     <div class="container">
         <img src="/logo.png" class="logo" alt="">
         <p class="text-center">
